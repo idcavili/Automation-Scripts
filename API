@@ -26,9 +26,51 @@ GET /param/
 {id:{
       device:
       name:
+      value:
       path:
       write:
       log:
       userlog:
       desc:
       ack:
+}
+
+GET /param/[id]/value
+value
+
+PUT /param/[id]/value
+value
+
+GET /param/[id]/event?first=&last=&count=
+[{
+   time:
+   value:
+   user:
+   acktime:
+   ackuser:
+}]
+
+GET /device/event/[id]?first=&last=&count=
+{
+  time:
+  value:
+  acktime:
+  ackuser:
+}
+
+GET /offnormal
+{device:{
+            id:{
+                  time:
+                  acktime:
+                  ackuser:
+            }
+param:{
+            id:{
+                  time:
+                  value:
+                  acktime:
+                  ackuser:
+            }
+      }
+}
