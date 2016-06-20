@@ -1,0 +1,34 @@
+GET /device
+{id:{
+      name:
+      address:
+      online:
+      pinguri:
+      pingrate:
+      type:
+      system:
+    }
+}
+
+GET /device/[deviceid]/[path]
+
+GET /area/[areaname]/[areaname]
+{area:{
+        name:{
+              displayname:
+              point:[{x:
+                      y:}]
+              }
+        }
+}
+
+GET /param/
+{id:{
+      device:
+      name:
+      path:
+      write:
+      log:
+      userlog:
+      desc:
+      ack:
