@@ -43,19 +43,19 @@ value
 
 GET /param/[id]/event?first=&last=&count=
 [{
-   time:
-   value:
-   user:
-   acktime:
-   ackuser:
+      time:
+      value:
+      user:
+      acktime:
+      ackuser:
 }]
 
 GET /device/event/[id]?first=&last=&count=
 {
-  time:
-  value:
-  acktime:
-  ackuser:
+      time:
+      value:
+      acktime:
+      ackuser:
 }
 
 GET /offnormal
@@ -73,4 +73,27 @@ param:{
                   ackuser:
             }
       }
+}
+
+GET /user
+{id:{
+      name:
+      password:
+      pin:
+      desc:
+      email:
+      joindate:
+      role:[]
+}
+
+GET /role
+{id:
+      name:
+      desc:
+      deviceperm:[{id:
+                   type:
+                  }]
+      paramperm:[{id:
+                  type:
+                  }]
 }
