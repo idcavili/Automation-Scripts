@@ -58,6 +58,7 @@ GET /device/event/[id]?first=&last=&count=
       ackuser:
 }
 
+Retrieve list of off-normal parameters
 GET /offnormal
 {device:{
             id:{
@@ -75,6 +76,7 @@ param:{
       }
 }
 
+Retrieve list of users
 GET /user
 {id:{
       name:
@@ -86,6 +88,7 @@ GET /user
       role:[]
 }
 
+Retrieve list of roles
 GET /role
 {id:
       name:
