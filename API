@@ -100,3 +100,14 @@ GET /role
                   type:
                   }]
 }
+
+Retrieve list of scenes
+GET /scene
+{id:
+      name:
+      desc:
+      param:{id:value}
+      deviceperm:{role:device}
+      paramperm:{role:param}
+}
+
